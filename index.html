@@ -3,86 +3,93 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1f3a">
-  <meta name="description" content="Terrence — Computer Science student at Midlands State University, Zimbabwe.">
-  <title>Terrence | Computer Science Student</title>
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="Terrence — Computer Science student at Midlands State University, Zimbabwe. Explore current skills, projects, and interests.">
+  <title>Terrence — CS Student & Builder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#home" aria-label="Terrence home"><span class="brand-mark">T.</span><span>Terrence<span class="brand-dot">.</span></span></a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
-    <nav class="nav" id="site-nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact" class="nav-cta">Contact <span>↗</span></a>
-    </nav>
-  </header>
+  <div class="site-shell" id="home">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Terrence home"><span class="brand-symbol">T<span>.</span></span><span class="brand-name">TERRENCE<span class="brand-sub">PORTFOLIO / 2026</span></span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <a href="#about">01 / About</a><a href="#skills">02 / Toolkit</a><a href="#projects">03 / Work</a><a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE STUDENT · MSU</p>
-        <h1>Learning to build.<br><span class="gold-text">Building to make a difference.</span></h1>
-        <p class="hero-intro">Hi, I'm <strong>Terrence</strong>, a Computer Science student at Midlands State University in Zimbabwe. I'm developing my programming and web skills and exploring how technology can solve real problems.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my projects <span>↘</span></a><a class="button button-outline" href="mailto:terrynt2006@gmail.com">Get in touch</a></div>
-        <div class="hero-details"><span><strong>MSU</strong><small>Midlands State University</small></span><span><strong>Zimbabwe</strong><small>Based in</small></span><span><strong>Python · HTML · CSS</strong><small>Current toolkit</small></span></div>
-      </div>
-      <div class="hero-visual" aria-label="Profile photo">
-        <div class="photo-frame"><img class="profile-photo" src="assets/profile.jpg" alt="Terrence wearing a black formal suit"></div>
-        <div class="photo-label"><span class="label-mark">✦</span><span><strong>Curious by nature</strong><small>Focused on learning and creating</small></span></div>
-        <div class="visual-caption">LEARN / BUILD / IMPROVE</div>
-      </div>
-    </section>
+    <main>
+      <section class="hero">
+        <div class="hero-grid-mark" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> COMPUTER SCIENCE STUDENT <span class="eyebrow-divider">/</span> MSU, ZIMBABWE</p>
+          <h1>Curiosity<br>into <span class="outline-word">creation</span><span class="blue-period">.</span></h1>
+          <p class="hero-intro">I'm <strong>Terrence</strong> — learning how to turn code, ideas, and a little persistence into useful digital experiences.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↘</span></a><a class="text-button" href="mailto:terrynt2006@gmail.com">Get in touch <span>↗</span></a></div>
+          <div class="hero-index"><span>SCROLL TO EXPLORE</span><span class="index-line"></span><span>01 — 05</span></div>
+        </div>
+        <aside class="hero-side">
+          <div class="profile-card">
+            <div class="profile-topline"><span>PROFILE / 001</span><span class="profile-status"><i></i> IN PROGRESS</span></div>
+            <div class="profile-image-wrap"><img src="assets/profile.jpg" alt="Portrait of Terrence" class="profile-photo"><span class="image-cross cross-one">+</span><span class="image-cross cross-two">+</span><span class="image-coordinate">ZIMBABWE · MSU</span></div>
+            <div class="profile-bottom"><div><span class="micro-label">CURRENT FOCUS</span><strong>Learn. Build. Repeat.</strong></div><span class="profile-arrow">↗</span></div>
+          </div>
+          <div class="side-note"><span class="note-line"></span><p>Building my foundation<br>one project at a time.</p></div>
+        </aside>
+        <div class="hero-bottom-bar"><span>PYTHON</span><span>HTML</span><span>CSS</span><span class="bar-spacer"></span><span>STUDENT DEVELOPER / PORTFOLIO</span></div>
+      </section>
 
-    <section class="section about-section" id="about">
-      <div class="section-label"><span>01</span> ABOUT ME</div>
-      <div class="about-layout">
-        <h2>Technology is more than code.<br><span class="muted">It's a way to make things better.</span></h2>
-        <div class="about-copy"><p>I'm a first-year Computer Science student interested in software development, technology, and technopreneurship. I enjoy learning how digital tools work and how they can be used to address everyday challenges.</p><p>This portfolio brings together my current skills, projects, and ideas as I continue to grow.</p></div>
-      </div>
-      <div class="principles"><div><span>01</span><strong>Keep learning</strong><small>Build strong foundations and stay curious.</small></div><div><span>02</span><strong>Make it useful</strong><small>Focus on practical, real-world problems.</small></div><div><span>03</span><strong>Improve with practice</strong><small>Learn by building and refining projects.</small></div></div>
-    </section>
+      <section class="section about-section" id="about">
+        <div class="section-kicker"><span class="kicker-number">01</span><span>THE PERSON BEHIND THE CODE</span></div>
+        <div class="about-layout">
+          <h2>Not just learning<br>to code. <span>Learning<br>to think.</span></h2>
+          <div class="about-copy"><p class="copy-lead">I'm a Computer Science student at Midlands State University, Zimbabwe, interested in software development, technology, and technopreneurship.</p><p>This site is a snapshot of where I am now: the skills I'm building, the projects I've worked on, and the ideas I want to explore. It will grow as I do.</p><div class="about-stamp"><span>MY APPROACH</span><strong>Stay curious.<br>Make it useful.</strong><span class="stamp-star">✳</span></div></div>
+        </div>
+        <div class="principle-row"><article><span>01 — MINDSET</span><h3>Keep learning</h3><p>Build strong foundations and stay curious.</p></article><article><span>02 — PURPOSE</span><h3>Solve real problems</h3><p>Look for practical ways technology can help.</p></article><article><span>03 — PROCESS</span><h3>Learn by building</h3><p>Practice, test, reflect, and improve.</p></article></div>
+      </section>
 
-    <section class="section skills-section" id="skills">
-      <div class="section-label"><span>02</span> SKILLS & INTERESTS</div>
-      <div class="section-heading-row"><h2>My current toolkit<span class="gold-text">.</span></h2><p>Skills I'm developing one project at a time.</p></div>
-      <div class="skills-grid">
-        <article class="skill-card"><span class="skill-icon">Py</span><div><h3>Python</h3><p>Programming fundamentals and problem-solving.</p></div><span class="skill-index">01</span></article>
-        <article class="skill-card"><span class="skill-icon">&lt;/&gt;</span><div><h3>HTML</h3><p>Structuring clear and accessible web pages.</p></div><span class="skill-index">02</span></article>
-        <article class="skill-card"><span class="skill-icon">✳</span><div><h3>CSS</h3><p>Styling responsive and readable interfaces.</p></div><span class="skill-index">03</span></article>
-      </div>
-      <div class="interest-strip"><span>ALSO INTERESTED IN</span><b>Software development</b><i></i><b>Technology</b><i></i><b>Technopreneurship</b></div>
-    </section>
+      <section class="section skills-section" id="skills">
+        <div class="section-kicker"><span class="kicker-number">02</span><span>TOOLS I'M DEVELOPING</span></div>
+        <div class="skills-heading"><h2>A growing<br><span>toolkit.</span></h2><p>I'm focused on the fundamentals today and building toward more capable projects tomorrow.</p></div>
+        <div class="skills-board">
+          <article class="tool-card tool-python"><div class="tool-card-top"><span>LANGUAGE / 01</span><span class="tool-number">Py</span></div><div><h3>Python</h3><p>Programming fundamentals and problem-solving.</p></div><span class="tool-footer">LOGIC · PRACTICE · PROGRESS</span></article>
+          <article class="tool-card tool-html"><div class="tool-card-top"><span>MARKUP / 02</span><span class="tool-number">&lt;/&gt;</span></div><div><h3>HTML</h3><p>Structuring clear, accessible web pages.</p></div><span class="tool-footer">STRUCTURE · SEMANTICS</span></article>
+          <article class="tool-card tool-css"><div class="tool-card-top"><span>STYLING / 03</span><span class="tool-number">✳</span></div><div><h3>CSS</h3><p>Creating readable, responsive interfaces.</p></div><span class="tool-footer">LAYOUT · DESIGN · RESPONSIVE</span></article>
+        </div>
+        <div class="interest-row"><span class="micro-label">AREAS THAT SPARK MY INTEREST</span><div><span>Software development</span><span>Technology</span><span>Technopreneurship</span></div></div>
+      </section>
 
-    <section class="section projects-section" id="projects">
-      <div class="section-label"><span>03</span> SELECTED WORK</div>
-      <div class="section-heading-row"><h2>Projects & ideas<span class="gold-text">.</span></h2><p>A growing collection of practical work and concepts.</p></div>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-art freshbasket-art"><div class="art-sun"></div><div class="art-field field-one"></div><div class="art-field field-two"></div><span class="art-caption">WEB DEVELOPMENT / HTML + CSS</span><div class="art-title">Fresh<span>Basket</span></div><span class="art-foot">GROCERY SHOP PROTOTYPE</span></div>
-          <div class="project-content"><div class="project-meta"><span>FRONT-END PROJECT</span><span>01</span></div><h3>FreshBasket Grocery Shop</h3><p>A front-end grocery shop prototype featuring product listings, categories, sample prices, and links intended for order quotations.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>Product listing</span></div><a class="text-link" href="https://github.com/terrynt2006-gif/freshbusket" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a></div>
-        </article>
-        <article class="project-card">
-          <div class="project-art portfolio-art"><span class="art-caption">PERSONAL WEBSITE / HTML + CSS + JS</span><div class="browser-card"><div class="browser-dots"><i></i><i></i><i></i></div><div class="browser-line long"></div><div class="browser-line"></div><div class="browser-button"></div></div><span class="portfolio-word">PORTFOLIO<span>.</span></span><span class="art-foot">LEARNING IN PUBLIC</span></div>
-          <div class="project-content"><div class="project-meta"><span>PERSONAL PROJECT</span><span>02</span></div><h3>Personal Portfolio</h3><p>A responsive website designed to introduce me, present my current skills, and make it easy to explore my work and contact me.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="text-link" href="https://github.com/terrynt2006-gif/PORTFOLIO" target="_blank" rel="noreferrer">View source code <span>↗</span></a></div>
-        </article>
-      </div>
-      <p class="section-note">AgriLink Zimbabwe is a technopreneurship concept I'm exploring, rather than a completed software product.</p>
-    </section>
+      <section class="section projects-section" id="projects">
+        <div class="section-kicker"><span class="kicker-number">03</span><span>SELECTED WORK & IDEAS</span></div>
+        <div class="projects-heading"><h2>Made while<br><span>learning.</span></h2><p>Each project is a chance to practise, experiment, and understand how the pieces fit together.</p></div>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-visual grocery-visual"><div class="visual-index">PROJECT / 001</div><div class="grocery-bag"><span class="bag-handle"></span><span class="bag-label">fresh<br><b>basket.</b></span><span class="produce produce-a"></span><span class="produce produce-b"></span><span class="produce produce-c"></span></div><span class="visual-bottom">FRONT-END / HTML + CSS</span></div>
+            <div class="project-info"><div class="project-meta"><span>FRONT-END PROJECT</span><span>01 / 02</span></div><h3>FreshBasket<br>Grocery Shop</h3><p>A front-end grocery shop prototype with product listings, categories, sample prices, and links intended for order quotations.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>Product listings</span></div><a class="project-link" href="https://github.com/terrynt2006-gif/freshbusket" target="_blank" rel="noreferrer">View project on GitHub <span>↗</span></a></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual portfolio-visual"><div class="visual-index">PROJECT / 002</div><div class="site-window"><div class="window-top"><i></i><i></i><i></i><span>terrence / portfolio</span></div><div class="window-body"><span class="window-small">HELLO, I'M TERRENCE</span><b>Ideas into<br><em>interfaces.</em></b><div class="window-lines"><i></i><i></i><i></i></div><span class="window-pill">EXPLORE ↗</span></div></div><span class="visual-bottom">PERSONAL SITE / HTML + CSS + JS</span></div>
+            <div class="project-info"><div class="project-meta"><span>PERSONAL PROJECT</span><span>02 / 02</span></div><h3>Personal<br>Portfolio</h3><p>A responsive website to introduce me, share my current skills, showcase my work, and make it easy to connect.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/terrynt2006-gif/PORTFOLIO" target="_blank" rel="noreferrer">View source code <span>↗</span></a></div>
+          </article>
+        </div>
+        <div class="idea-note"><span class="idea-icon">↗</span><div><span class="micro-label">IDEA IN DEVELOPMENT</span><h3>AgriLink Zimbabwe</h3><p>A technopreneurship concept I'm exploring — not a completed software product.</p></div><span class="idea-tag">CONCEPT STAGE</span></div>
+      </section>
 
-    <section class="next-section">
-      <div class="next-inner"><div><div class="section-label"><span>04</span> WHAT'S NEXT</div><h2>Small steps.<br><span class="gold-text">Steady progress.</span></h2></div><p>I'm working toward stronger programming skills, more practical projects, and a better understanding of how technology and business can work together.</p><a class="button button-primary" href="https://github.com/terrynt2006-gif" target="_blank" rel="noreferrer">Follow my work <span>↗</span></a></div>
-    </section>
+      <section class="progress-section">
+        <div class="progress-graphic" aria-hidden="true"><span class="orbit orbit-a"></span><span class="orbit orbit-b"></span><span class="orbit-core">T<span>.</span></span><span class="orbit-label">ALWAYS<br>IN PROGRESS</span></div>
+        <div class="progress-copy"><div class="section-kicker"><span class="kicker-number">04</span><span>WHAT COMES NEXT</span></div><h2>The best work<br>is still <span>ahead.</span></h2><p>I'm working toward stronger programming skills, more practical projects, and a better understanding of how technology and business can work together.</p><a class="button button-light" href="https://github.com/terrynt2006-gif" target="_blank" rel="noreferrer">Follow my journey <span>↗</span></a></div>
+      </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="section-label"><span>05</span> GET IN TOUCH</div>
-      <div class="contact-layout"><div><h2>Have an idea?<br><span class="gold-text">Let's connect.</span></h2><p>I'm open to connecting about technology, learning, projects, and opportunities to contribute.</p></div><div class="contact-card"><span class="contact-icon">↗</span><small>EMAIL ME</small><a href="mailto:terrynt2006@gmail.com">terrynt2006@gmail.com</a><div class="contact-divider"></div><small>FIND ME ON</small><a href="https://github.com/terrynt2006-gif" target="_blank" rel="noreferrer">GitHub profile ↗</a></div></div>
-    </section>
-  </main>
-
-  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">T.</span><span>Terrence<span class="brand-dot">.</span></span></a><span>Designed with purpose. Built through learning.</span><span>© <span id="year"></span> Terrence</span></footer>
+      <section class="section contact-section" id="contact">
+        <div class="section-kicker"><span class="kicker-number">05</span><span>OPEN CHANNEL</span></div>
+        <div class="contact-layout"><div><p class="contact-overline">HAVE A QUESTION OR AN IDEA?</p><h2>Let's make<br><span>something matter.</span></h2><p class="contact-copy">I'm open to connecting about technology, learning, projects, and opportunities to contribute.</p></div><div class="contact-links"><a class="contact-link" href="mailto:terrynt2006@gmail.com"><span><small>EMAIL</small><strong>terrynt2006@gmail.com</strong></span><b>↗</b></a><a class="contact-link" href="https://github.com/terrynt2006-gif" target="_blank" rel="noreferrer"><span><small>GITHUB</small><strong>Explore my repositories</strong></span><b>↗</b></a><div class="contact-location"><span class="live-dot"></span> ZIMBABWE <span>/</span> MIDLANDS STATE UNIVERSITY</div></div></div>
+      </section>
+    </main>
+    <footer class="footer"><a class="brand" href="#home"><span class="brand-symbol">T<span>.</span></span><span class="brand-name">TERRENCE<span class="brand-sub">PORTFOLIO / 2026</span></span></a><span class="footer-message">Built with curiosity. Updated with purpose.</span><a class="back-top" href="#home">BACK TO TOP ↑</a><span class="copyright">© <span id="year"></span> TERRENCE</span></footer>
+  </div>
 </body>
 </html>
