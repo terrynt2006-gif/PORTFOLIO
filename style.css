@@ -40,3 +40,18 @@ h1,h2,h3,p{margin-top:0}.hero h1{font-size:clamp(56px,8vw,112px);line-height:.99
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 
 .reveal-pending{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}.reveal-pending.reveal-visible{opacity:1;transform:translateY(0)}
+
+/* Hero portrait moved to the left side on desktop */
+@media (min-width:701px){
+  .hero{grid-template-columns:minmax(300px,.78fr) minmax(0,1.1fr)}
+  .hero-side{grid-column:1;grid-row:1;justify-self:start}
+  .hero-copy{grid-column:2;grid-row:1}
+  .hero-bottom-bar{grid-column:1/-1}
+  .side-note{right:-18px}
+}
+/* Keep the portrait above the introduction on mobile */
+@media (max-width:700px){
+  .hero{display:flex;flex-direction:column}
+  .hero-side{order:0}
+  .hero-copy{order:1}
+}
