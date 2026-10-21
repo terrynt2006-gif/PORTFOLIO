@@ -101,3 +101,48 @@
   .contact-card{padding:22px}
   .footer{padding:22px;flex-wrap:wrap}
 }
+
+
+/* Stronger layout redesign: change the desktop composition without removing content. */
+@media (min-width: 851px) {
+  .hero {
+    grid-template-columns: minmax(300px, .78fr) minmax(0, 1.22fr);
+    gap: clamp(48px, 7vw, 100px);
+    max-width: 1200px;
+    min-height: 700px;
+    padding-top: 66px;
+  }
+  .hero-visual { grid-column: 1; grid-row: 1; justify-self: start; max-width: 390px; }
+  .hero-copy { grid-column: 2; grid-row: 1; }
+  .hero h1 { font-size: clamp(46px, 4.8vw, 64px); }
+  .hero-details { gap: 22px; }
+}
+.topbar { max-width: 1200px; padding-left: 30px; padding-right: 30px; }
+.about-section { margin-top: 10px; }
+.section-label { margin-bottom: 30px; }
+.about-layout { padding: 10px 0 4px; }
+.principles > div { min-height: 132px; }
+.skills-section { background: linear-gradient(180deg, rgba(255,255,255,.018), transparent 80%); }
+.skills-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.skill-card { min-height: 170px; align-content: center; }
+.project-grid { align-items: stretch; }
+.project-card { display: flex; flex-direction: column; }
+.project-content { display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
+.project-content .text-link { margin-top: auto; }
+.project-art { min-height: 250px; }
+.next-inner { grid-template-columns: 1fr 1.05fr auto; }
+.contact-layout { grid-template-columns: 1.1fr .9fr; }
+@media (max-width: 850px) {
+  .hero { grid-template-columns: .8fr 1.2fr; }
+  .hero-visual { grid-column: 1; grid-row: 1; }
+  .hero-copy { grid-column: 2; grid-row: 1; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .skill-card { min-height: 125px; }
+}
+@media (max-width: 650px) {
+  .hero { display: flex; flex-direction: column; }
+  .hero-visual { order: 0; }
+  .hero-copy { order: 1; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .project-content .text-link { margin-top: 0; }
+}
